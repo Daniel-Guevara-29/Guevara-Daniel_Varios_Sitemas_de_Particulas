@@ -4,9 +4,9 @@ let p;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  s = new Particula();
-  v = new Particula();
-  p = new Particula();
+  s = new Sistema();
+  v = new Sistema();
+  p = new Sistema();
 }
 
 function draw() {
