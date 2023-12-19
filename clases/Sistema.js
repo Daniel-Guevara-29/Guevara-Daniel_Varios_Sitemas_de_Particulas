@@ -3,7 +3,9 @@ class Sistema {
     this.pos = createVector(width / 2, height / 2);
     this.ps = [];
     this.t = random(100);
-    this.color = color(random(100, 255), random(255), 0);
+
+    let colores = [color(0, 0, 255), color(255, 0, 0), color(0, 255, 0)];
+    this.color = random(colores);
   }
   update() {
     this.t += 0.01;

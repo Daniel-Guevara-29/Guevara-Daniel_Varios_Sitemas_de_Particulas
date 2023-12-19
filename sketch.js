@@ -1,20 +1,20 @@
-let s;
-let v;
-let p;
+let sistemas = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  s = new Sistema();
-  v = new Sistema();
-  p = new Sistema();
+
+  // Crear múltiples sistemas con diferentes colores
+  for (let i = 0; i < 3; i++) {
+    sistemas.push(new Sistema());
+  }
 }
 
 function draw() {
   background(255, 20);
-  s.update();
-  s.display();
-  p.update();
-  p.display();
-  v.update();
-  v.display();
+
+  // Actualizar y mostrar cada sistema
+  for (let i = 0; i < sistemas.length; i++) {
+    sistemas[i].update();
+    sistemas[i].display();
+  }
 }
